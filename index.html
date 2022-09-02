@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="new calculator.css">
+</head>
+<body>
+    <div class="container">
+    <div class="container1">
+        <div class="line11">
+            <input type="button" class="sin" value="sin" onclick="sin()">
+            <input type="button" class="cos" value="cos" onclick="cos()">
+            <input type="button" class="tan" value="tan" onclick="tan()">
+        </div>
+        <div class="line21">
+            <input type="button" class="log" value="log" onclick="log()">
+            <input type="button" class="e" value="e" onclick="e()">
+            <input type="button" class="pi" value="π" onclick="pi()">
+            
+        </div>
+        <div class="line31">
+            <input type="button" class="factorial" value="x!" onclick="fact()">
+            <input type="button" class="radical" value="√" onclick="sqrt()">
+            <button class="power" onclick="pow()">x<sup>2</sup></button>
+        </div>
+        <div class="line41">
+            <input type="button" class="para1" value="(" onclick="insert(this.value)">
+            <input type="button" class="ln" value="ln" onclick="ln()">
+            <input type="button" class="para2" value=")" onclick="insert(this.value)">
+        </div>
+    </div>
+    <div class="container2">
+        <br>
+        <span>Calculator</span>
+        <br>
+        <br>
+        <form class="calc" name="form">
+            <input type="text" placeholder="0" class="calculate" name="textview" disabled>
+        </form>
+        <br>
+        <div class="line1">
+            <input type="button" class="ac" value="AC" onclick="clean()">
+            <input type="button" class="modulo" value="%" onclick="insert(this.value)">
+            <input type="button" class="divide" value="/" onclick="insert(this.value)">
+            <input type="button" class="clear" value="Del" onclick="back()">
+        </div>
+        <br>  
+        <div class="line2"> 
+            <input type="button" class="seven" value="7" onclick="insert(7)">
+            <input type="button" class="eight" value="8" onclick="insert(8)">
+            <input type="button" class="nine" value="9" onclick="insert(9)">
+            <input type="button" class="multiply" value="*" onclick="insert(this.value)">
+        </div>
+        <br>
+        <div class="line3">
+            <input type="button" class="four" value="4" onclick="insert(4)">
+            <input type="button" class="five" value="5" onclick="insert(5)">
+            <input type="button" class="six" value="6" onclick="insert(6)">
+            <input type="button" class="minus" value="-" onclick="insert(this.value)">
+        </div>
+        <br>
+        <div class="line4">
+            <input type="button" class="one" value="1" onclick="insert(1)">
+            <input type="button" class="two" value="2" onclick="insert(2)">
+            <input type="button" class="three" value="3" onclick="insert(3)">
+            <input type="button" class="plus" value="+" onclick="insert(this.value)">
+        </div>
+        <br>
+        <div class="line5">
+            <input type="button" class="zero" value="0" onclick="insert(0)">
+            <input type="button" class="more" value="<" onclick="appearance()">
+            <input type="button" class="back" value=">" onclick="hide()"></input>
+            <input type="button" class="point" value="." onclick="insert('.')">
+            <input type="button" class="equal" value="=" onclick="equal()">
+        </div>
+        <br>
+    </div>
+    </div>
+
+    <script src="new calculator.js"></script>
+</body>
+</html>

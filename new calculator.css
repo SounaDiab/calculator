@@ -1,0 +1,176 @@
+body{
+    background: linear-gradient(#ccdced, #ebe1d8, #a58361);
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container1{
+    width: 250px;
+    height: 173px;
+    background: linear-gradient(#ccdced, #ebe1d8, #a58361);
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px #a58361, -7px -7px 10px #ccdced;
+    visibility: hidden;
+    position: absolute;
+    top: 220px;
+    left: -170px;
+}
+.line11,
+.line21,
+.line31,
+.line41{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+.sin,.cos,.tan,.log,.e,.pi,.factorial,.radical,.power,.para1,.ln,.para2{
+    width: 50px;
+    height: 30px;
+}
+
+.container2{
+    width: 250px;
+    margin: 100px auto;
+    background: linear-gradient(#ccdced,
+        #ebe1d8,
+        #a58361);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #ecf0f3,-2px -2px 10px #ecf0f3;
+    position: relative;
+    left: 80px;
+}
+.line1,.line2,.line3,.line4,.line5{
+    display: flex;
+    justify-content: space-around;
+}
+.ac,.modulo,.divide,.clear{
+    width: 50px;
+    height: 30px;
+}
+.seven,.eight,.nine,.multiply{
+    width: 50px;
+    height: 30px;
+}
+.four,
+.five,
+.six,
+.minus,
+.point,
+.equal {
+    width: 50px;
+    height: 30px;
+}
+.one,
+.two,
+.three,
+.plus {
+    width: 50px;
+    height: 30px;
+}
+.zero{
+    width: 50px;
+    height: 30px;
+}
+.more,.back{
+    width: 25px;
+    height: 30px;
+}
+
+span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}    
+.calculate{
+    display: block;
+    width: 246px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #ecf0f3;
+    border-radius: 5px;
+    color: black;
+    padding-top: 10px;
+    text-align: right;
+    font-size: x-large;
+    box-shadow: inset 8px 8px 8px #cbced1,
+            inset -8px -8px 8px #ffffff;
+}
+.calculate::placeholder{
+    color: black;
+    font-size: x-large;
+}
+.calc{
+    color: white;
+}
+input[type="button"],button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -2px -2px 8px #ffff;
+}
+
+.line1 input,.line11 input{
+    background: #ccdced;
+    color: #a58361;
+}
+.line2 input,.line21 input{
+    background: linear-gradient(#ccdced,#ebe1d8);
+    color: #a58361;
+}
+.line3 input,.line31 input,.line31 button{
+    background: #ebe1d8;
+    color: #a58361;
+}
+.line4 input,.line41 input {
+    background: linear-gradient(#ebe1d8, #a58361);
+    color: #ebe1d8;
+}
+.line5 input {
+    background: #a58361;
+    color: #ebe1d8;
+}
+
+.line1 input:hover,
+ .line11 input:hover {
+     box-shadow: inset 2px 2px 8px #1010101a,
+         inset -2px -2px 8px #fff;
+     background: #ccdced;
+ }
+
+.line2 input:hover,
+.line21 input:hover {
+     box-shadow: inset 2px 2px 8px #1010101a,
+         inset -2px -2px 8px #fff;
+     background: linear-gradient(#ccdced, #ebe1d8);
+}
+
+.line3 input:hover,
+.line31 input:hover,.line31 button:hover {
+    box-shadow: inset 2px 2px 8px #1010101a,
+        inset -2px -2px 8px #fff;
+    background: #ebe1d8;
+}
+
+.line4 input:hover,
+.line41 input:hover {
+    box-shadow: inset 2px 2px 8px #1010101a,
+        inset -2px -2px 8px #fff;
+    background: linear-gradient(#ebe1d8, #a58361);
+}
+
+.line5 input:hover{
+    box-shadow: inset 2px 2px 8px #1010101a,
+        inset -2px -2px 8px #fff;
+    background: #a58361;
+}
