@@ -179,8 +179,9 @@ input[type="button"],button{
 @media (max-width: 500px) {
     .container{
         width: 250px;
-        height: 100%;
-        display: block;
+        height: fit-content;
+        flex-direction: column;
+        top: -125px;
     }
     .container1{
         background: linear-gradient(#a58361, #ebe1d8, #ccdced);
