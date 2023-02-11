@@ -177,6 +177,9 @@ input[type="button"],button{
 
 /* Start Media */
 @media (max-width: 500px) {
+    body{
+        background: linear-gradient(#ccdced, #ebe1d8, #a58361, #a58361, #ebe1d8, #ccdced);
+    }
     .container{
         width: 250px;
         height: fit-content;
@@ -187,7 +190,7 @@ input[type="button"],button{
         background: linear-gradient(#a58361, #ebe1d8, #ccdced);
         top: 531px;
         border-top-left-radius: 0;
-    border-top-right-radius: 0;
+        border-top-right-radius: 0;
     }
     .line11 input {
         background: #a58361;
